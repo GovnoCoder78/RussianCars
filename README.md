@@ -1,16 +1,7 @@
-# rus_cars_list
+<h1> Практическая работа от 28.02</h1>
 
-A new Flutter project.
+# <img width="192" alt="image" src="https://github.com/GovnoCoder78/RussianCars/assets/148610971/d1830d5f-098a-4ee7-8046-54075bb6b7b9">
+# <img width="187" alt="image" src="https://github.com/GovnoCoder78/RussianCars/assets/148610971/711647ea-943e-44b2-9a31-7bb286c7136b">
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

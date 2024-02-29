@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:rus_cars_list/widgetSamples/MyGridView.dart';
+import 'package:rus_cars_list/main.dart';
 class Cars {
   final int id;
   final String name;
@@ -16,13 +19,12 @@ List<Cars> carsList = [
   Cars(6, 'UAZ Patriot Sport', 'Внедорожник, 2.7 л, 5МТ, 150 л.с.', 2300000,"https://images.drive.ru/i/0/60ffe49cf5a4a038d11cdfac.jpg" ),
   Cars(7, 'UAZ Pickup', 'Грузовик, 2.7 л, 5МТ, 150 л.с.', 1900000,"https://images.drive.ru/i/0/5c5becabec05c44d7e000059.jpg"),
   Cars(8, 'UAZ Profi', 'Фургон, 2.7 л, 5МТ, 150 л.с.', 3400000,"https://uaz-ekb.ru/public/cat/cars/132-kupit-uaz-profi-furgon-2021-modelnogo-goda.jpg" ),
-  Cars(9, 'GAZelle Next', 'Грузовик, 2.8 л, 5МТ, 150 л.с.', 3000000,"https://major-truck.ru/upload/img/auto/2_1%20(1).png" ),
-  Cars(10, 'GAZelle Business', 'Микроавтобус, 2.8 л, 5МТ, 150 л.с.', 3500000,"https://strg2.autovsalone.ru/neofiles/serve-image/597af77764e0a1754c0be7be/1190x500/q90" ),
-  Cars(11, 'Lada Largus Cross', 'Универсал, 1.6 л, 5МТ, 106 л.с.', 1500000,"https://cdnstatic.rg.ru/crop1300x868/uploads/images/194/12/10/1595851349_e3.jpg" ),
-  Cars(12, 'Lada Largus Luxe', 'Универсал, 1.6 л, 4АТ, 106 л.с.', 1700000,"https://img-c.drive.ru/models.photos/0000/000/000/001/ab1/48d92a75ec6f3443-largethumbnail.jpg" ),
-  Cars(13, 'Lada 4x4 Urban', 'Внедорожник, 1.7 л, 5МТ, 83 л.с.', 1200000,"https://ladacenter.ru/ds/cars/about/img/preview/1406547908_lada_4x4_urban_31_01.jpg" ),
-  Cars(14, 'Lada 4x4 Bronto', 'Внедорожник, 1.7 л, 5МТ, 83 л.с.', 1300000,"https://motor.ru/thumb/1816x0/filters:quality(75):no_upscale()/imgs/2020/04/10/07/3860354/791f0a4b279b2c6136f63ef9696772264f60dbaa.jpg" ),
-  Cars(15, 'Aurus Senat', 'Седан, 4.4 л, АВТ, 598 л.с.', 22000000,"https://s.auto.drom.ru/i24230/c/photos/generations/500x_aurus_senat_g8376.jpg?876743" ),
-  Cars(16, 'Aurus Arsenal', 'Минивэн, 4.4 л, АВТ, 598 л.с.', 26000000,"https://motor.ru/thumb/1816x0/filters:quality(75):no_upscale()/imgs/2021/09/11/19/4886725/a4bb7bda3cd38b9a0a06100211b1971cde008846.jpg" ),
-  Cars(17, 'Sollers UAZ Hunter', 'Внедорожник, 2.7 л, 5МТ, 145 л.с.', 1400000,"https://sollers-auto.com/about/products/img/uaz-hunter.jpg" ),
+  Cars(9, 'GAZelle Business', 'Минивен, 2.8 л, 5МТ, 150 л.с.', 3500000,"https://strg2.autovsalone.ru/neofiles/serve-image/597af77764e0a1754c0be7be/1190x500/q90" ),
+  Cars(10, 'Lada Largus Cross', 'Универсал, 1.6 л, 5МТ, 106 л.с.', 1500000,"https://cdnstatic.rg.ru/crop1300x868/uploads/images/194/12/10/1595851349_e3.jpg" ),
+  Cars(11, 'Lada Largus Luxe', 'Универсал, 1.6 л, 4АТ, 106 л.с.', 1700000,"https://img-c.drive.ru/models.photos/0000/000/000/001/ab1/48d92a75ec6f3443-largethumbnail.jpg" ),
+  Cars(12, 'Lada 4x4 Urban', 'Внедорожник, 1.7 л, 5МТ, 83 л.с.', 1200000,"https://ladacenter.ru/ds/cars/about/img/preview/1406547908_lada_4x4_urban_31_01.jpg" ),
+  Cars(13, 'Lada 4x4 Bronto', 'Внедорожник, 1.7 л, 5МТ, 83 л.с.', 1300000,"https://motor.ru/thumb/1816x0/filters:quality(75):no_upscale()/imgs/2020/04/10/07/3860354/791f0a4b279b2c6136f63ef9696772264f60dbaa.jpg" ),
+  Cars(14, 'Aurus Senat', 'Седан, 4.4 л, АВТ, 598 л.с.', 22000000,"https://s.auto.drom.ru/i24230/c/photos/generations/500x_aurus_senat_g8376.jpg?876743" ),
+  Cars(15, 'Aurus Arsenal', 'Минивэн, 4.4 л, АВТ, 598 л.с.', 26000000,"https://motor.ru/thumb/1816x0/filters:quality(75):no_upscale()/imgs/2021/09/11/19/4886725/a4bb7bda3cd38b9a0a06100211b1971cde008846.jpg" ),
+  Cars(16, 'Sollers UAZ Hunter', 'Внедорожник, 2.7 л, 5МТ, 145 л.с.', 1400000,"https://sollers-auto.com/about/products/img/uaz-hunter.jpg" ),
 ];

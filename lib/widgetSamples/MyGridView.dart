@@ -7,11 +7,14 @@ class MyGridView extends StatelessWidget {
    String carName;
    String desc;
    int cost;
-   MyGridView({super.key, required this.carName, required this.desc, required this.cost, required this.img});
+   final VoidCallback onPressed;
+   MyGridView({super.key, required this.carName, required this.desc, required this.cost, required this.img, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: onPressed,
+      child: Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(
         color: Color.fromARGB(100, 255, 255, 255),
@@ -48,22 +51,9 @@ class MyGridView extends StatelessWidget {
                 ),
               flex: 1,
             ),
-            Expanded(
-                child: Container(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(child: Text(desc,
-                        )
-                      )
-                    ],
-                  ),
-                ),
-              flex: 1,
-            )
           ],
         ),
-
+      )
     );
   }
 }

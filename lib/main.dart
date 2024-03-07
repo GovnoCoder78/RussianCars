@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rus_cars_list/data/Cars.dart';
 import 'package:rus_cars_list/widgetSamples/MyGridView.dart';
+import 'package:rus_cars_list/pages/CarCard.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,18 +13,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // routes: {'/carCard': (BuildContext context) {
+      //   return CarCard(carIndex: ,); //провести сюда индекс машины с массива
+      //   }
+      // },
       title: 'Российские автомобили',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+  MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,30 +40,38 @@ class MyHomePage extends StatelessWidget {
          fontWeight: FontWeight.bold
           ),
         ),
-        backgroundColor: Color.fromARGB(100, 138, 57, 57),
+        backgroundColor: Color.fromARGB(100, 220, 124, 124),
         centerTitle: true,
       ),
-      body: Container(
-        alignment: Alignment.center,
-        color: Color.fromARGB(100, 58, 58, 58),
-        child: GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      backgroundColor: Color.fromARGB(100, 211, 211, 211),
+      body: Card(
+        color: Color.fromARGB(100, 211, 211, 211),
+        child:Container(
+          child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               crossAxisSpacing: 15,
               mainAxisSpacing: 20
             ),
             itemCount: carsList.length,
             itemBuilder: (BuildContext context, int index){
+
               return MyGridView(
                   carName: carsList[index].name,
                   desc: carsList[index].description,
                   cost: carsList[index].price,
-                  img: carsList[index].imagePath
+                  img: carsList[index].imagePath[0],
+                  onPressed:(){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (BuildContext context) => CarCard(carIndex: index)),
+                  );
+                }
               );
             }
         ),
       )
-
+      )
     );
   }
 }

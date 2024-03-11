@@ -69,15 +69,49 @@ class _CarCardState extends State<CarCard> {
                     ],
                   )
                 ),
-                Text('Описание',
+                Container(
+                alignment: Alignment.bottomLeft,
+                height: 50,
+                child: Text('Описание',
                 textAlign: TextAlign.left,
                 style: TextStyle(fontSize: 26,
                 color: Colors.white),
+                )
                 ),
-                Text(car.description,
-                style: TextStyle(fontSize: 22,
-                  color: Colors.white)
-                  )
+                Container(
+                height: 80,
+                  child: ListView(
+                    children: [
+                      Text(car.description,
+                        style: TextStyle(fontSize: 22,
+                        color: Colors.white)
+                      ),
+                    ]
+                  ),
+                ),
+                Container(
+                height: 50,
+                alignment: Alignment.bottomLeft,
+                child: Text('Характеристики',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 26,
+                      color: Colors.white)
+                )
+                ),
+                // Container(
+                //   child: Table(
+                //     defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                //     border: TableBorder.symmetric({
+                //       BorderSide inside = BorderSide.none,
+                //       BorderSide outside = BorderSide.none
+                //     }),
+                //     children: [
+                //       TableRow(
+                //         children:
+                //       )
+                //     ],
+                //   ),
+                // )
               ]
                 )
                 )

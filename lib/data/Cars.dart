@@ -14,14 +14,14 @@ class Cars {
 }
 
 List<Cars> carsList = [
-  Cars(1, 'Lada Granta Classic', ["Седан","1.6 л", "5МТ", "98 л.с"], 1000000, ["https://s.auto.drom.ru/i24228/m/bull_image_stub/default_90001e90f77318496b726b2e061f11f5.jpg",
+  Cars(1, 'Lada Granta Classic', ["Седан","1160 кг", "Бензиновый", "1.6 л","106","6,8", "Механическая 5МТ"], 1000000, ["https://s.auto.drom.ru/i24228/m/bull_image_stub/default_90001e90f77318496b726b2e061f11f5.jpg",
                                                                           "https://static.lada.ru/files/sd/1466/gallery/779efc23-47e1-4588-af4c-2e1414620fea.jpeg",
                                                                           "https://img-c.drive.ru/models.photos/0000/000/000/001/369/48d61e473bac2e29-large.jpg"], """это практичный и надежный седан, идеально подходящий для ежедневных поездок по городу. Автомобиль имеет просторный салон и большой багажник, а также оснащен необходимым набором опций для комфортной езды."""),
-  Cars(2, 'Lada Granta Drive Active', ["Седан", "1.6 л", "5МТ", "106 л.с."], 1200000, ["https://alfaleasing.ru/catalog-next/_next/image/?url=https://io.ilsa.ru/gallery/catalog/2/e0/eff1eafbb3e4d63e47ad27ab14962e02.jpg&w=2048&q=70",
+  Cars(2, 'Lada Granta Drive Active', ["Седан","1160 кг","Бензиновый", "1.6 л","115", "7", "Механическая 5МТ"], 1200000, ["https://alfaleasing.ru/catalog-next/_next/image/?url=https://io.ilsa.ru/gallery/catalog/2/e0/eff1eafbb3e4d63e47ad27ab14962e02.jpg&w=2048&q=70",
                                                                                 "https://images.drive.ru/i/0/5d710a27ec05c41e5700000e.jpg",
                                                                                   "https://cdnstatic.rg.ru/crop1300x868/uploads/images/173/38/35/lada_granta_sport_9.jpeg"], """это модернизированная версия классической Гранты, отличающаяся улучшенным дизайном и более богатой комплектацией. 
                                                                                                                                                                               Автомобиль оснащен современными системами безопасности и мультимедиа, а также имеет более мощный двигатель."""),
-  Cars(3, 'Lada Vesta SW Cross', ["Универсал", "1.6 л", "5МТ", "106 л.с."], 1300000, ["https://alfaleasing.ru/catalog-next/_next/image/?url=https://io.ilsa.ru/gallery/catalog/e/d6/09235afbc190e2281c58bc05fb618d6e.jpg&w=1200&q=70"
+  Cars(3, 'Lada Vesta SW Cross', ["Универсал","1300 кг","Бензиновый", "1.6 л","106","9,9",  "Механическая 5МТ"], 1300000, ["https://alfaleasing.ru/catalog-next/_next/image/?url=https://io.ilsa.ru/gallery/catalog/e/d6/09235afbc190e2281c58bc05fb618d6e.jpg&w=1200&q=70"
                                                                               "https://lada.uz/uploads/family/4/17/overview-1920.jpeg",
                                                                               "https://img-c.drive.ru/models.photos/0000/000/000/001/126/48d542d9266fc15c-large.jpg"], """это универсал в стиле кроссовер, сочетающий в себе практичность и стиль. Автомобиль имеет повышенный клиренс и защиту днища,
                                                                                                                                                                        что позволяет ему преодолевать легкие бездорожья. Вместительный салон и большой багажник делают Vesta SW Cross идеальным выбором для семейных поездок."""),

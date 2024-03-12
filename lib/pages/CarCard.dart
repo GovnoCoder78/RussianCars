@@ -98,20 +98,154 @@ class _CarCardState extends State<CarCard> {
                       color: Colors.white)
                 )
                 ),
-                // Container(
-                //   child: Table(
-                //     defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-                //     border: TableBorder.symmetric({
-                //       BorderSide inside = BorderSide.none,
-                //       BorderSide outside = BorderSide.none
-                //     }),
-                //     children: [
-                //       TableRow(
-                //         children:
-                //       )
-                //     ],
-                //   ),
-                // )
+                Container(
+                  color: Color.fromARGB(105, 255, 255, 255),
+                  child: Table(
+                    defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                    children: [
+                      TableRow(
+                        children:[
+                          Text(
+                            textAlign: TextAlign.left,
+                              characteristicName[0],
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white
+                              ),
+                            ),
+                          Text(
+                            textAlign: TextAlign.center,
+                              car.characteristics[0],
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white
+                              ),
+                          )
+                        ]
+                      ),
+                      TableRow(
+                          children:[
+                            Text(
+                              textAlign: TextAlign.left,
+                              characteristicName[1],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              textAlign: TextAlign.center,
+                              car.characteristics[1],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            )
+                          ]
+                      ),
+                      TableRow(
+                          children:[
+                            Text(
+                              textAlign: TextAlign.left,
+                              characteristicName[2],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              textAlign: TextAlign.center,
+                              car.characteristics[2],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            )
+                          ]
+                      ),
+                      TableRow(
+                          children:[
+                            Text(
+                              textAlign: TextAlign.left,
+                              characteristicName[3],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              textAlign: TextAlign.center,
+                              car.characteristics[3],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            )
+                          ]
+                      ),
+                      TableRow(
+                          children:[
+                            Text(
+                              textAlign: TextAlign.left,
+                              characteristicName[4],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              textAlign: TextAlign.center,
+                              car.characteristics[4],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            )
+                          ]
+                      ),
+                      TableRow(
+                          children:[
+                            Text(
+                              textAlign: TextAlign.left,
+                              characteristicName[5],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              textAlign: TextAlign.center,
+                              car.characteristics[5],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            )
+                          ]
+                      ),
+                      TableRow(
+                          children:[
+                            Text(
+                              textAlign: TextAlign.left,
+                              characteristicName[6],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              textAlign: TextAlign.center,
+                              car.characteristics[6],
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              ),
+                            )
+                          ]
+                      ),
+                    ],
+                  ),
+                )
               ]
                 )
                 )

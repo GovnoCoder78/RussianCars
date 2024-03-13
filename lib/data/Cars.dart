@@ -10,6 +10,7 @@ class Cars {
   final int price;
   final List <String> imagePath;
   final String description;
+<<<<<<< HEAD
   final String videoUrl;
   Cars(this.id, this.name, this.characteristics, this.videoUrl, this.price, this.imagePath, this.description);
 }
@@ -32,6 +33,30 @@ List<Cars> carsList = [
   // Cars(5, 'UAZ Patriot Classic', 'Внедорожник, 2.7 л, 5МТ, 150 л.с.', 2000000,["https://autoreview.ru/images/Article/1593/Article_159305_860_575.jpg",
   //                                                                               "https://img-c.drive.ru/models.photos/0000/000/000/000/e33/48d4698eb8b3e2ac-large.jpg",
   //                                                                                 "https://img-c.drive.ru/models.photos/0000/000/000/000/e31/48d4698eb8b3e2ac-large.jpg"] ),
+=======
+  final String video;
+  Cars(this.id, this.name, this.characteristics, this.price, this.video, this.imagePath, this.description);
+}
+
+List<Cars> carsList = [
+  Cars(1, 'Lada Granta Classic', ["Седан","1160 кг", "Бензиновый", "1.6 л","106","6,8", "Механическая 5МТ"], 1000000, "https://www.youtube.com/watch?v=Io9WVp6PAxc", ["https://s.auto.drom.ru/i24228/m/bull_image_stub/default_90001e90f77318496b726b2e061f11f5.jpg",
+                                                                          "https://static.lada.ru/files/sd/1466/gallery/779efc23-47e1-4588-af4c-2e1414620fea.jpeg",
+                                                                          "https://img-c.drive.ru/models.photos/0000/000/000/001/369/48d61e473bac2e29-large.jpg"], """это практичный и надежный седан, идеально подходящий для ежедневных поездок по городу. Автомобиль имеет просторный салон и большой багажник, а также оснащен необходимым набором опций для комфортной езды."""),
+  Cars(2, 'Lada Granta Drive Active', ["Седан","1160 кг","Бензиновый", "1.6 л","115", "7", "Механическая 5МТ"], 1200000,"https://www.youtube.com/watch?v=Io9WVp6PAxc", ["https://alfaleasing.ru/catalog-next/_next/image/?url=https://io.ilsa.ru/gallery/catalog/2/e0/eff1eafbb3e4d63e47ad27ab14962e02.jpg&w=2048&q=70",
+                                                                                "https://images.drive.ru/i/0/5d710a27ec05c41e5700000e.jpg",
+                                                                                  "https://cdnstatic.rg.ru/crop1300x868/uploads/images/173/38/35/lada_granta_sport_9.jpeg"], """это модернизированная версия классической Гранты, отличающаяся улучшенным дизайном и более богатой комплектацией. 
+                                                                                                                                                                              Автомобиль оснащен современными системами безопасности и мультимедиа, а также имеет более мощный двигатель."""),
+  Cars(3, 'Lada Vesta SW Cross', ["Универсал","1300 кг","Бензиновый", "1.6 л","106","9,9",  "Механическая 5МТ"], 1300000,"https://www.youtube.com/watch?v=Z6_HgFX9E80", ["https://alfaleasing.ru/catalog-next/_next/image/?url=https://io.ilsa.ru/gallery/catalog/e/d6/09235afbc190e2281c58bc05fb618d6e.jpg&w=1200&q=70"
+                                                                              "https://lada.uz/uploads/family/4/17/overview-1920.jpeg",
+                                                                              "https://img-c.drive.ru/models.photos/0000/000/000/001/126/48d542d9266fc15c-large.jpg"], """это универсал в стиле кроссовер, сочетающий в себе практичность и стиль. Автомобиль имеет повышенный клиренс и защиту днища,
+                                                                                                                                                                       что позволяет ему преодолевать легкие бездорожья. Вместительный салон и большой багажник делают Vesta SW Cross идеальным выбором для семейных поездок."""),
+  Cars(4, 'Lada XRAY Cross', ["Кроссовер","1200 кг", "Бензиновый", "1.8 л" , "122", "9,5", "Автоматическая"], 1400000,"https://www.youtube.com/watch?v=QIwG-SQoIlU&t=1s",["https://img-c.drive.ru/models.photos/0000/000/000/001/7f3/48d7cc3886abcf58-large.jpg",
+                                                                          "https://img-c.drive.ru/models.photos/0000/000/000/001/7f5/48d7cc3886abcf58-large.jpg",
+                                                                          "https://img-c.drive.ru/models.photos/0000/000/000/001/7f4/48d7cc3886abcf58-large.jpg"], """это стильный и динамичный кроссовер, оснащенный современными опциями и технологиями. Автомобиль имеет яркий дизайн и хорошую проходимость, а также оснащен системами помощи водителю и мультимедиа.""" ),
+  Cars(5, 'UAZ Patriot Classic', ["Внедорожник","2000 кг","Бензиновый", "2.7 л" , "150","10,3", "Механическая 5 мт"], 2000000,"https://www.youtube.com/watch?v=U32XVOkkqw0",["https://autoreview.ru/images/Article/1593/Article_159305_860_575.jpg",
+                                                                                "https://img-c.drive.ru/models.photos/0000/000/000/000/e33/48d4698eb8b3e2ac-large.jpg",
+                                                                                  "https://img-c.drive.ru/models.photos/0000/000/000/000/e31/48d4698eb8b3e2ac-large.jpg"], """это классический внедорожник, известный своей надежностью и проходимостью. Автомобиль имеет простой и функциональный дизайн, а также оснащен необходимым набором опций для комфортной езды по бездорожью.""" ),
+>>>>>>> test
   // Cars(6, 'UAZ Patriot Sport', 'Внедорожник, 2.7 л, 5МТ, 150 л.с.', 2300000,["https://images.drive.ru/i/0/60ffe49cf5a4a038d11cdfac.jpg",
   //                                                                             "https://img-c.drive.ru/models.photos/3840/000/000/001/f66/88ccefeb22b02cac-large.jpg",
   //                                                                             "https://img-c.drive.ru/models.photos/3840/000/000/001/f67/88ccefeb22b02cac-large.jpg"] ),

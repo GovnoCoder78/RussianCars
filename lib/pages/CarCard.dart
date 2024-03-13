@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rus_cars_list/main.dart';
 import 'package:rus_cars_list/data/Cars.dart';
 import 'package:card_swiper/card_swiper.dart';
-<<<<<<< HEAD
-=======
 import 'package:rus_cars_list/widgetSamples/Player.dart';
->>>>>>> test
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 class CarCard extends StatefulWidget {
   int carIndex;
@@ -22,19 +19,11 @@ class _CarCardState extends State<CarCard> {
   Widget build(BuildContext context) {
     Cars car = carsList[carIndex];
     String? videoId;
-<<<<<<< HEAD
     videoId = YoutubePlayerController.convertUrlToId(car.videoUrl);
     final _controller = YoutubePlayerController();
     _controller.cueVideoById(videoId: videoId.toString());
-=======
-    videoId = YoutubePlayerController.convertUrlToId(car.video);
-    final _controller = YoutubePlayerController(
-      params: YoutubePlayerParams(
-        
-      )
-    );
+    videoId = YoutubePlayerController.convertUrlToId(car.videoUrl);
     _controller.loadVideoById(videoId: videoId.toString());
->>>>>>> test
     return Scaffold(
       appBar: AppBar(
         title: Text(car.name,
@@ -269,12 +258,8 @@ class _CarCardState extends State<CarCard> {
                   child: YoutubePlayer(
                     controller: _controller,
                     aspectRatio: 16/9,
-<<<<<<< HEAD
                   ),
-=======
                   )
->>>>>>> test
-                )
               ]
                 )
                 )

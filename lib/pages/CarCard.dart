@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rus_cars_list/main.dart';
 import 'package:rus_cars_list/data/Cars.dart';
 import 'package:card_swiper/card_swiper.dart';
+import 'package:rus_cars_list/widgetSamples/Player.dart';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 class CarCard extends StatefulWidget {
   int carIndex;
   CarCard({super.key, required this.carIndex});
@@ -16,6 +18,14 @@ class _CarCardState extends State<CarCard> {
   @override
   Widget build(BuildContext context) {
     Cars car = carsList[carIndex];
+    String? videoId;
+    videoId = YoutubePlayerController.convertUrlToId(car.video);
+    final _controller = YoutubePlayerController(
+      params: YoutubePlayerParams(
+        
+      )
+    );
+    _controller.loadVideoById(videoId: videoId.toString());
     return Scaffold(
       appBar: AppBar(
         title: Text(car.name,
@@ -245,6 +255,12 @@ class _CarCardState extends State<CarCard> {
                       ),
                     ],
                   ),
+                ),
+                Container(
+                  child: YoutubePlayer(
+                    controller: _controller,
+                    aspectRatio: 16/9,
+                  )
                 )
               ]
                 )
